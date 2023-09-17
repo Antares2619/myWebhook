@@ -7,9 +7,9 @@ import requests
 from urllib.parse import urlparse, unquote, parse_qs
 
 #Step 2: Update the URL where the program is run. The url could just be your server ip ('5.5.5.5') or a proper web host
-host_url  = 'hostrunningthisprogram.com'
+host_url  = 'https://my-webhook-rho.vercel.app/'
 #Step 3: Update the port. Pick a port on your server and make sure the inbound firewall rule allows access to the port. For security purposes I recommend you restrict the IP that can access it to your server
-host_port = 8888 
+host_port = 80 
 
 app = Flask(__name__)
 
